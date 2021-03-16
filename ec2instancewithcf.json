@@ -1,4 +1,4 @@
-i{
+{
     "AWSTemplateFormatVersion": "2010-09-09",
     "Description": " creating ec2instance with vpc components",
     "Parameters": {
