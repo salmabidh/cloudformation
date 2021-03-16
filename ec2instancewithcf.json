@@ -5,7 +5,7 @@
         "Keys": {
             "Description": "select keypair",
             "Type": "AWS::EC2::KeyPair::KeyName",
-	    "Default": "testserver"
+	    "Default": "ssl_ota"
         },
         "Image": {
             "Description": "select  all linux flavours",
