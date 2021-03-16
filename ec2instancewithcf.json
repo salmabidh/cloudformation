@@ -4,7 +4,8 @@
     "Parameters": {
         "Keys": {
             "Description": "select keypair",
-            "Type": "AWS::EC2::KeyPair::KeyName"
+            "Type": "AWS::EC2::KeyPair::KeyName",
+	    "Default": "testserver"
         },
         "Image": {
             "Description": "select  all linux flavours",
@@ -55,16 +56,12 @@
         "AvailabilityZone2": {
             "Description": "select avaliablity zone for subnet2",
             "Type": "String",
-            "Default": "ap-southeast-1a",
+            "Default": "ap-southeast-1b",
             "AllowedValues": [
                 "ap-southeast-1a",
                 "ap-southeast-1b",
                 "ap-southeast-1c"
             ]
-        },
-        "Security": {
-            "Description": "creating security groups",
-            "Type": "List<AWS::EC2::SecurityGroup::GroupName>"
         }
     },
     "Resources": {
